@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F19C9015-2E6D-44B2-9E43-FB70F6F2608E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>prjReservationSystem.My.MyApplication</StartupObject>
+    <RootNamespace>prjReservationSystem</RootNamespace>
+    <AssemblyName>prjReservationSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>home_purple_64_h.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>prjReservationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>prjReservationSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WacomMTDN, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WacomMTDN.dll</HintPath>
+    </Reference>
+    <Reference Include="WintabDN, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WintabDN.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASS\ini.vb" />
+    <Compile Include="Forms\DevsCapForm.Designer.vb">
+      <DependentUpon>DevsCapForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DevsCapForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCompany.Designer.vb">
+      <DependentUpon>frmAddCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddSystemAcc.Designer.vb">
+      <DependentUpon>frmAddSystemAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddSystemAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompany.Designer.vb">
+      <DependentUpon>frmCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmConnDB.Designer.vb">
+      <DependentUpon>frmConnDB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmConnDB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExit.Designer.vb">
+      <DependentUpon>frmExit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHistoryLogs.Designer.vb">
+      <DependentUpon>FrmHistoryLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHistoryLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmIDtype.Designer.vb">
+      <DependentUpon>frmIDtype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmIDtype.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogsCateg.Designer.vb">
+      <DependentUpon>frmLogsCateg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogsCateg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManExit.Designer.vb">
+      <DependentUpon>frmManExit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManExit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManual.Designer.vb">
+      <DependentUpon>frmManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManualId.Designer.vb">
+      <DependentUpon>frmManualId.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManualId.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPurpose.Designer.vb">
+      <DependentUpon>frmPurpose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPurpose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRefNo.Designer.vb">
+      <DependentUpon>frmRefNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRefNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSetPrinter.Designer.vb">
+      <DependentUpon>frmSetPrinter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSetPrinter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSigna.Designer.vb">
+      <DependentUpon>frmSigna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSigna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSignaPad.Designer.vb">
+      <DependentUpon>frmSignaPad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSignaPad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSystem.Designer.vb">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSystemAcc.Designer.vb">
+      <DependentUpon>frmSystemAcc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSystemAcc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSystemTitle.Designer.vb">
+      <DependentUpon>frmSystemTitle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSystemTitle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVerification.Designer.vb">
+      <DependentUpon>frmVerification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVerification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmViewPrint.Designer.vb">
+      <DependentUpon>frmViewPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmViewPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVisitorIn.Designer.vb">
+      <DependentUpon>frmVisitorIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVisitorIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ADDRESS_SETTINGS.vb" />
+    <Compile Include="Modules\BMP_TO_BYTE.vb" />
+    <Compile Include="Modules\BMP_TO_JPEG_FUNCTION.vb" />
+    <Compile Include="Modules\D8U_FUNCTION.vb" />
+    <Compile Include="Modules\DBconn_FUNCTIONS.vb" />
+    <Compile Include="Modules\EXIT_FUNCTION.vb" />
+    <Compile Include="Modules\FUNCTION_INIFILE.vb" />
+    <Compile Include="Modules\FUNCTION_SCANNED_ID.vb" />
+    <Compile Include="Modules\Hex_To_String.vb" />
+    <Compile Include="Modules\ID_No.vb" />
+    <Compile Include="Modules\KEYBOARD_FUNCTION.vb" />
+    <Compile Include="Modules\Man_EXit.vb" />
+    <Compile Include="Modules\PICTURE_PATH_FUNCTION.vb" />
+    <Compile Include="Modules\PIC_FROM_DB.vb" />
+    <Compile Include="Modules\PIC_LOGS_SETTINGS.vb" />
+    <Compile Include="Modules\PRINTER_DRIVERS.vb" />
+    <Compile Include="Modules\PRINT_FUNCTION.vb" />
+    <Compile Include="Modules\SECURITY_LOGIN.vb" />
+    <Compile Include="Modules\SYSTEM_NAME.vb" />
+    <Compile Include="Modules\WEB_CAM_FUNCTION.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\CrVisitorLogs.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrVisitorLogs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\DevsCapForm.resx">
+      <DependentUpon>DevsCapForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCompany.resx">
+      <DependentUpon>frmAddCompany.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddSystemAcc.resx">
+      <DependentUpon>frmAddSystemAcc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCompany.resx">
+      <DependentUpon>frmCompany.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmConnDB.resx">
+      <DependentUpon>frmConnDB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExit.resx">
+      <DependentUpon>frmExit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHistoryLogs.resx">
+      <DependentUpon>FrmHistoryLogs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmIDtype.resx">
+      <DependentUpon>frmIDtype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogsCateg.resx">
+      <DependentUpon>frmLogsCateg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManExit.resx">
+      <DependentUpon>frmManExit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManual.resx">
+      <DependentUpon>frmManual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManualId.resx">
+      <DependentUpon>frmManualId.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPurpose.resx">
+      <DependentUpon>frmPurpose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRefNo.resx">
+      <DependentUpon>frmRefNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSetPrinter.resx">
+      <DependentUpon>frmSetPrinter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSigna.resx">
+      <DependentUpon>frmSigna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSignaPad.resx">
+      <DependentUpon>frmSignaPad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSystem.resx">
+      <DependentUpon>frmSystem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSystemAcc.resx">
+      <DependentUpon>frmSystemAcc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSystemTitle.resx">
+      <DependentUpon>frmSystemTitle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVerification.resx">
+      <DependentUpon>frmVerification.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmViewPrint.resx">
+      <DependentUpon>frmViewPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmVisitorIn.resx">
+      <DependentUpon>frmVisitorIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CrVisitorLogs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrVisitorLogs.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home_purple_64_h.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="COMRD800Lib">
+      <Guid>{50DEC628-228A-4AB7-A057-1247676BCA10}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
